@@ -34,6 +34,9 @@ export const defaultTheme = {
       m: '1rem',
       s: '0.875rem',
       'bold-s': '0.75rem',
+      tag: '0.625rem',
+      'button-g': '0.875rem',
+      'button-s': '0.75rem',
     },
   },
   fontFamily: {

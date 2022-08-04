@@ -16,7 +16,7 @@ export function Header() {
           <MapPin size={22} weight="fill" color="#8047F8" />
           <span>Porto Alegre, RS</span>
         </HeaderButtons>
-        <HeaderButtons color="purple">
+        <HeaderButtons color="yellow">
           <CartItensNumber>
             <span>2</span>
           </CartItensNumber>

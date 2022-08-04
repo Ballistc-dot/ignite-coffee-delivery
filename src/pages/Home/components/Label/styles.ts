@@ -8,7 +8,10 @@ export const LabelContainer = styled.div`
 
 export const LabelTitle = styled.span`
   color: ${(props) => props.theme.colors['base-text']};
-  font-size: ${(props) => props.theme.fontSize.text.m};
+  @media screen and (min-width: 768px) {
+    font-size: ${(props) => props.theme.fontSize.text.m};
+  }
+  font-size: ${(props) => props.theme.fontSize.text.tag};
   font-family: ${(props) => props.theme.fontFamily.Roboto};
 `
 

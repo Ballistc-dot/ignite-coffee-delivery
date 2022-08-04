@@ -3,7 +3,10 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0;
+  @media screen and (min-width: 1024px) {
+    padding: 2rem 0;
+  }
+  padding: 1rem;
 `
 export const HeaderButtonsContainer = styled.div`
   display: flex;
