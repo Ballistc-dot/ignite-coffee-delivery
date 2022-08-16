@@ -1,13 +1,15 @@
 export interface CoffeesProps {
+  id: number
   name: string
-  tags: string[]
-  description: string
+  tags?: string[]
+  description?: string
   price: number
   image: string
 }
 
 export const coffees: CoffeesProps[] = [
   {
+    id: 1,
     name: 'Expresso Tradicional',
     tags: ['tradicional'],
     description: 'O tradicional café feito com água quente e grãos moídos',
@@ -15,6 +17,7 @@ export const coffees: CoffeesProps[] = [
     price: 9.9,
   },
   {
+    id: 2,
     name: 'Expresso Americano',
     tags: ['tradicional'],
     description: 'Expresso diluído, menos intenso que o tradicional',
@@ -22,6 +25,7 @@ export const coffees: CoffeesProps[] = [
     price: 9.9,
   },
   {
+    id: 3,
     name: 'Expresso Cremoso',
     tags: ['tradicional'],
     description: 'Café expresso tradicional com espuma cremosa',
@@ -29,6 +33,7 @@ export const coffees: CoffeesProps[] = [
     price: 9.9,
   },
   {
+    id: 4,
     name: 'Expresso Gelado',
     tags: ['tradicional', 'gelado'],
     description: 'Bebida preparada com café expresso e cubos de gelo',
@@ -36,6 +41,7 @@ export const coffees: CoffeesProps[] = [
     price: 9.9,
   },
   {
+    id: 5,
     name: 'Café com leite',
     tags: ['tradicional', 'com leite'],
     description: 'Meio a meio de expresso tradicional com leite vaporizado',
@@ -43,14 +49,15 @@ export const coffees: CoffeesProps[] = [
     price: 9.9,
   },
   {
+    id: 6,
     name: 'Latte',
     tags: ['tradicional', 'com leite'],
     description: '',
-
     image: 'latte.png',
     price: 9.9,
   },
   {
+    id: 7,
     name: 'Capuccino',
     tags: ['tradicional', 'com leite'],
     description:
@@ -59,6 +66,7 @@ export const coffees: CoffeesProps[] = [
     price: 9.9,
   },
   {
+    id: 8,
     name: 'Macchiato',
     tags: ['tradicional', 'com leite'],
     description:
@@ -67,6 +75,7 @@ export const coffees: CoffeesProps[] = [
     price: 9.9,
   },
   {
+    id: 9,
     name: 'Mocaccino',
     tags: ['tradicional', 'com leite'],
     description: 'Café expresso com calda de chocolate, pouco leite e espuma',
@@ -74,6 +83,7 @@ export const coffees: CoffeesProps[] = [
     price: 9.9,
   },
   {
+    id: 10,
     name: 'Chocolate Quente',
     tags: ['tradicional', 'com leite'],
     description: 'Bebida feita com chocolate dissolvido no leite quente e café',
@@ -81,6 +91,7 @@ export const coffees: CoffeesProps[] = [
     price: 9.9,
   },
   {
+    id: 11,
     name: 'Cubano',
     tags: ['especial', 'alcoólico', 'gelado'],
     description:
@@ -89,6 +100,7 @@ export const coffees: CoffeesProps[] = [
     price: 9.9,
   },
   {
+    id: 12,
     name: 'Havaiano',
     tags: ['especial'],
     description: 'Bebida adocicada preparada com café e leite de coco',
@@ -96,6 +108,7 @@ export const coffees: CoffeesProps[] = [
     price: 9.9,
   },
   {
+    id: 13,
     name: 'Árabe',
     tags: ['especial'],
     description: 'Bebida preparada com grãos de café árabe e especiarias',
@@ -103,6 +116,7 @@ export const coffees: CoffeesProps[] = [
     price: 9.9,
   },
   {
+    id: 14,
     name: 'Irlandês',
     tags: ['especial', 'alcoólico'],
     description: 'Bebida a base de café, uísque irlandês, açúcar e chantilly',

@@ -47,12 +47,44 @@ export const CoffeeContent = styled.div`
   margin-top: 1rem;
 `
 
-export const CoffeeTitle = styled.h3`
-  color: ${(props) => props.theme.colors['base-subtitle']};
-  font-family: ${(props) => `'${props.theme.fontFamily.Baloo}'`};
-  font-size: ${(props) => props.theme.fontSize.title.s};
+export const CoffeeFooter = styled.div`
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
 `
 
-export const CoffeeDescription = styled.p``
+export const CoffeeSifra = styled.span`
+  color: ${(props) => props.theme.colors['base-text']};
+  font-size: ${(props) => props.theme.fontSize.text.s};
+  font-family: ${(props) => props.theme.fontFamily.Roboto};
+`
 
-export const CoffeeFooter = styled.div``
+export const CoffeePrice = styled.span`
+  color: ${(props) => props.theme.colors['base-text']};
+  font-size: ${(props) => props.theme.fontSize.title.m};
+  font-family: ${(props) => `'${props.theme.fontFamily.Baloo}'`};
+  align-items: center;
+  display: flex;
+`
+
+export const AddToCartButton = styled.button`
+  width: 2.375rem;
+  height: 2.375rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme.colors['brand-purple-dark']};
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  :not(:disabled):hover {
+    background-color: ${(props) => props.theme.colors['brand-purple']};
+  }
+  :disabled {
+    cursor: not-allowed;
+  }
+`

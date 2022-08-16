@@ -25,7 +25,7 @@ export const defaultTheme = {
     title: {
       xl: '3rem',
       l: '2rem',
-      m: '1.5',
+      m: '1.5rem',
       s: '1.25rem',
       xs: '1.125rem',
     },
@@ -38,6 +38,12 @@ export const defaultTheme = {
       'button-g': '0.875rem',
       'button-s': '0.75rem',
     },
+  },
+  inputSize: {
+    sm: '3.75rem',
+    md: '12.5rem',
+    lg: '17.25rem',
+    all: '100%',
   },
   fontFamily: {
     Roboto: 'Roboto',

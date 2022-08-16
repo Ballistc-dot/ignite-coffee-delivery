@@ -68,25 +68,6 @@ export const IntroMain = styled.div`
   }
 `
 
-export const IntroTitle = styled.h1`
-  color: ${(props) => props.theme.colors['base-title']};
-  @media screen and (min-width: 768px) {
-    font-size: ${(props) => props.theme.fontSize.title.xl};
-  }
-  font-size: ${(props) => props.theme.fontSize.title.l};
-  font-family: ${(props) => `'${props.theme.fontFamily.Baloo}'`};
-  line-height: 1.3;
-`
-export const IntroSubtitle = styled.p`
-  color: ${(props) => props.theme.colors['base-subtitle']};
-  @media screen and (min-width: 768px) {
-    font-size: ${(props) => props.theme.fontSize.text.s};
-  }
-  font-size: ${(props) => props.theme.fontSize.text.l};
-  font-family: ${(props) => props.theme.fontFamily.Roboto};
-  margin-top: 1rem;
-`
-
 export const LabelsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -95,7 +76,7 @@ export const LabelsContainer = styled.div`
 `
 
 export const CoffeeListContainer = styled.main`
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1124px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,7 +90,9 @@ export const CoffeeList = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
+  @media screen and (max-width: 1124px) {
+    justify-content: center;
+  }
 `
 
 export const CoffeeListTitle = styled.h2`

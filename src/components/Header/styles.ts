@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.div`
@@ -37,8 +38,9 @@ export const HeaderButtons = styled.button<HeaderButtonsProps>`
     color: ${(props) => props.theme.colors['brand-purple-dark']};
     font-family: '${(props) => props.theme.fontFamily.Roboto}';
   }
+  cursor: pointer;
 `
-export const CartItensNumber = styled.span`
+export const CartItensNumber = styled(Link)`
   width: 2rem;
   height: 2rem;
   position: absolute;

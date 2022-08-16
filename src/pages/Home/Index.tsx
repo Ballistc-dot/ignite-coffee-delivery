@@ -2,8 +2,6 @@ import {
   IntroContainer,
   IntroContent,
   IntroMain,
-  IntroSubtitle,
-  IntroTitle,
   LabelsContainer,
   HomeContainer,
   CoffeeList,
@@ -15,20 +13,23 @@ import { Label } from './components/Label'
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 import { CoffeeCard } from './components/CoffeeCard'
 import { coffees } from '../../fakes/coffees'
+import { TextBase, TitleBase } from '../../styles/Tipograph'
 
 export function Home() {
   return (
     <HomeContainer>
+      <title>Coffee Delivery</title>
+
       <IntroContainer>
         <IntroContent className="container">
           <IntroMain>
-            <IntroTitle>
+            <TitleBase color="title" size="xl" fontFamily="Baloo">
               Encontre o café perfeito para qualquer hora do dia
-            </IntroTitle>
-            <IntroSubtitle>
+            </TitleBase>
+            <TextBase fontFamily="Roboto" size="l" color="subtitle">
               Com o Coffee Delivery você recebe seu café onde estiver, a
               qualquer hora
-            </IntroSubtitle>
+            </TextBase>
             <LabelsContainer>
               <Label
                 title="Compra simples e segura"
@@ -60,6 +61,7 @@ export function Home() {
         <CoffeeList>
           {coffees.map((coffee) => (
             <CoffeeCard
+              id={coffee.id}
               key={coffee.name}
               name={coffee.name}
               description={coffee.description}
